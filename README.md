@@ -47,9 +47,6 @@ Your project should be:
  ## Technology stack suggestions
 In order to best use this project for your training, we suggest that you use some of the programming languages, frameworks, libraries and tools that we use on most of our other projects:
 
-## 
-JSON Serialization
-
 ### Client-Server Stack
  - Kotlin (https://kotlinlang.org/docs/reference/)
  - Gradle (https://gradle.org/docs/)
