@@ -28,9 +28,9 @@ Your project should be:
 
 ### Phase 2
 * Perform some operations over database, sush as:
-** List all available contents.
-** Search a particular content by properties e.q (name, tag).
-** Filter contents by properties e.q (age, segment).
+  * List all available contents.
+  * Search a particular content by properties e.q (name, tag).
+  * Filter contents by properties e.q (age, segment).
 * Show the operation's results
 
 ### Phase 3
