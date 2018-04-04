@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
   spec.summary = "Sample framework for onBoarding purposes on PlayKids"
   spec.homepage = "https://github.com/kaio-silva-playkids/playkids-onboarding.git"
   
-  spec.license      = {
+  spec.license = {
     :type => 'Copyright',
     :text => <<-LICENSE
       Copyright 2018 Movile. All rights reserved.
