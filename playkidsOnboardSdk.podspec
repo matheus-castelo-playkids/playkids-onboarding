@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name = "playkids-onboard-sdk"
+  spec.name = "playkidsOnboardSdk"
   spec.version = "1.0.0"
   spec.summary = "Sample framework for onBoarding purposes on PlayKids"
   spec.homepage = "https://github.com/kaio-silva-playkids/playkids-onboarding.git"
