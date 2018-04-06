@@ -10,13 +10,16 @@ import UIKit
 import Alamofire
 
 internal class Requests {
-        
+    
+    let p = Parser()
+    
     open func requestMain(requestURL: String){
         Alamofire.request(requestURL).responseJSON{ response in
             switch response.result {
             case .success(let JSON):
                 print("Success Requesting Main:")
-                print(JSON)
+                //print(JSON)
+                self.p.parseMain(Data: JSON)
             case .failure(let error):
                 print("Failed with error: \(error)")
             }
@@ -28,7 +31,8 @@ internal class Requests {
             switch response.result {
             case .success(let JSON):
                 print("Success Requesting Content:")
-                print(JSON)
+                //print(JSON)
+                self.p.parseContent(Data: JSON)
             case .failure(let error):
                 print("Failed with error: \(error)")
             }
