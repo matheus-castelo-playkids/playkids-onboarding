@@ -21,15 +21,51 @@ internal class Parser {
                         let seg = Segment(id: segment["id"] as! String,
                                           type: segment["name"] as! String,
                                           name: segment["type"] as! String)
-                        print ("ID: \(seg.id)")
-                        print ("Type: \(seg.type)")
-                        print ("Name: \(seg.name)")
+//                        print ("Segment ID: \(seg.id)")
+//                        print ("Segment Type: \(seg.type)")
+//                        print ("Segment Name: \(seg.name)")
                         segArray.append(seg)
                     }
                 }
             }
         } else if (ContentType == "Content"){
-        
+            if let dictionary = Data as? [String: Any] {
+                if let groups = dictionary["groups"] as? [[String: Any]]{
+                    print("Groups Parsing Succesfull")
+//                    print(groups)
+                    
+                    var groupsArray = [PlaylistGroup]()
+                    groups.forEach { group in
+                        if let lists = group["lists"] as? [[String: Any]]{
+                            print("Lists Parsing Successfull")
+//                            print(lists)
+                            
+                            var listArray = [Playlist]()
+                            lists.forEach{ list in
+                                let newList = Playlist(id: list["id"] as! String,
+                                                       def: list["def"] as! String)
+//                                print("List ID: \(newList.id)")
+//                                print("List def: \(newList.def)")
+                                
+                                listArray.append(newList)
+                            }
+                            let playlistGroup = PlaylistGroup(id: group["id"] as! String,
+                                                              name: group["name"] as! String,
+                                                              headline: group["headline"] as! String,
+                                                              desc: group["description"] as! String,
+                                                              playlists: listArray)
+//                            print("----------------------------------------------------------------------")
+//                            print("Playlist ID: \(playlistGroup.id)")
+//                            print("Playlist name: \(playlistGroup.name)")
+//                            print("Playlist headline: \(playlistGroup.headline)")
+//                            print("Playlist description: \(playlistGroup.desc)")
+                            
+                            groupsArray.append(playlistGroup)
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
