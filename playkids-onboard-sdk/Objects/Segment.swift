@@ -8,8 +8,16 @@
 
 import Foundation
 
-internal class Segment: NSObject{
-    var id: String = ""
-    var type: String = ""
-    var name: String = ""
+struct Segment {
+
+    let id: String
+    let type: String
+    let name: String
+    
+    init(id: String, type: String, name: String) {
+        self.id   = id
+        self.type = type
+        self.name  = name
+    }
+
 }
