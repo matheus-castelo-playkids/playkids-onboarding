@@ -9,18 +9,28 @@
 import Foundation
 
 internal class Parser {
-    
-    open func parseMain(Data: Any) {
-        if let dictionary = Data as? [String: Any] {
-            if let segments = dictionary["segments"] as? [[String: Any]]{
-                print ("Main Segment Parse Succesfull")
-                print (segments)
-                
+
+    open func parse(Data: Any, ContentType: String) {
+        if (ContentType == "Main"){
+            if let dictionary = Data as? [String: Any] {
+                if let segments = dictionary["segments"] as? [[String: Any]]{
+                    print ("Main Segment Parse Succesfull")
+    //                print (segments)
+                    
+                    var segArray = [Segment]()
+                    segments.forEach { segment in
+                        let seg = Segment(id: segment["id"] as! String,
+                                          type: segment["name"] as! String,
+                                          name: segment["type"] as! String)
+                        print ("ID: \(seg.id)")
+                        print ("Type: \(seg.type)")
+                        print ("Name: \(seg.name)")
+                        segArray.append(seg)
+                    }
+                }
             }
-        }
-    }
-    
-    open func parseContent(Data: Any) {
+        } else if (ContentType == "Content"){
         
+        }
     }
 }
