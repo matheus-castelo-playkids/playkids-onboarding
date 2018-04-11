@@ -6,13 +6,29 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C1EA08B32076760500090F82 /* UniversalOnboardSdk */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C1EA08B42076760500090F82 /* Build configuration list for PBXAggregateTarget "UniversalOnboardSdk" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = UniversalOnboardSdk;
+			productName = UniversalOnboardSdk;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BAEC8C723EAF22641C2202B4 /* Pods_playkids_onboard_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD384CB88C237A1503DAA69 /* Pods_playkids_onboard_sdk.framework */; };
+		C11A0A3A2077B14300A64F13 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A0A392077B14300A64F13 /* Parser.swift */; };
+		C11A0A3D2077F8E100A64F13 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A0A3C2077F8E100A64F13 /* Segment.swift */; };
+		C173A1792076B96900098DDB /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173A1782076B96900098DDB /* SDK.swift */; };
 		C1A5317520750FC2006EF6F0 /* playkids_onboard_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A5316B20750FC2006EF6F0 /* playkids_onboard_sdk.framework */; };
 		C1A5317A20750FC2006EF6F0 /* playkids_onboard_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5317920750FC2006EF6F0 /* playkids_onboard_sdkTests.swift */; };
 		C1A5317C20750FC2006EF6F0 /* playkids_onboard_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A5316E20750FC2006EF6F0 /* playkids_onboard_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1A5318720751926006EF6F0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A5318620751926006EF6F0 /* Alamofire.framework */; };
-		C1A5318920751CF6006EF6F0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5318820751CF6006EF6F0 /* Request.swift */; };
+		C1EA08B2207671CB00090F82 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA08B1207671CB00090F82 /* Requests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +44,9 @@
 /* Begin PBXFileReference section */
 		9CD384CB88C237A1503DAA69 /* Pods_playkids_onboard_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_playkids_onboard_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27E747C852530C1C377D662 /* Pods-playkids-onboard-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playkids-onboard-sdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-playkids-onboard-sdk/Pods-playkids-onboard-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		C11A0A392077B14300A64F13 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C11A0A3C2077F8E100A64F13 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		C173A1782076B96900098DDB /* SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK.swift; sourceTree = "<group>"; };
 		C1A5316B20750FC2006EF6F0 /* playkids_onboard_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = playkids_onboard_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A5316E20750FC2006EF6F0 /* playkids_onboard_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = playkids_onboard_sdk.h; sourceTree = "<group>"; };
 		C1A5316F20750FC2006EF6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,7 +54,7 @@
 		C1A5317920750FC2006EF6F0 /* playkids_onboard_sdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playkids_onboard_sdkTests.swift; sourceTree = "<group>"; };
 		C1A5317B20750FC2006EF6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A5318620751926006EF6F0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1A5318820751CF6006EF6F0 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C1EA08B1207671CB00090F82 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		E6C18646B9D81A93EB107001 /* Pods-playkids-onboard-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playkids-onboard-sdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-playkids-onboard-sdk/Pods-playkids-onboard-sdk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +97,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C11A0A3B2077EC2F00A64F13 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C11A0A3C2077F8E100A64F13 /* Segment.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		C1A5316120750FC1006EF6F0 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +131,7 @@
 				C1A5316E20750FC2006EF6F0 /* playkids_onboard_sdk.h */,
 				C1A5316F20750FC2006EF6F0 /* Info.plist */,
 				C1A531852075108D006EF6F0 /* Core */,
+				C11A0A3B2077EC2F00A64F13 /* Objects */,
 			);
 			path = "playkids-onboard-sdk";
 			sourceTree = "<group>";
@@ -120,7 +148,9 @@
 		C1A531852075108D006EF6F0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				C1A5318820751CF6006EF6F0 /* Request.swift */,
+				C173A1782076B96900098DDB /* SDK.swift */,
+				C1EA08B1207671CB00090F82 /* Requests.swift */,
+				C11A0A392077B14300A64F13 /* Parser.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -149,6 +179,7 @@
 				C1A5316820750FC1006EF6F0 /* Headers */,
 				C1A5316920750FC1006EF6F0 /* Resources */,
 				4CA7B3345C5F9267A3BD12D3 /* [CP] Copy Pods Resources */,
+				C1EA08B72076763500090F82 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +225,9 @@
 					C1A5317320750FC2006EF6F0 = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					C1EA08B32076760500090F82 = {
+						CreatedOnToolsVersion = 9.3;
+					};
 				};
 			};
 			buildConfigurationList = C1A5316520750FC1006EF6F0 /* Build configuration list for PBXProject "playkids-onboard-sdk" */;
@@ -210,6 +244,7 @@
 			targets = (
 				C1A5316A20750FC1006EF6F0 /* playkids-onboard-sdk */,
 				C1A5317320750FC2006EF6F0 /* playkids-onboard-sdkTests */,
+				C1EA08B32076760500090F82 /* UniversalOnboardSdk */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +282,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-playkids-onboard-sdk/Pods-playkids-onboard-sdk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C1EA08B72076763500090F82 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		F26DE04109A627A2D3989CC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,7 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A5318920751CF6006EF6F0 /* Request.swift in Sources */,
+				C173A1792076B96900098DDB /* SDK.swift in Sources */,
+				C1EA08B2207671CB00090F82 /* Requests.swift in Sources */,
+				C11A0A3A2077B14300A64F13 /* Parser.swift in Sources */,
+				C11A0A3D2077F8E100A64F13 /* Segment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +555,22 @@
 			};
 			name = Release;
 		};
+		C1EA08B52076760500090F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1EA08B62076760500090F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +597,15 @@
 			buildConfigurations = (
 				C1A5318320750FC2006EF6F0 /* Debug */,
 				C1A5318420750FC2006EF6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1EA08B42076760500090F82 /* Build configuration list for PBXAggregateTarget "UniversalOnboardSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EA08B52076760500090F82 /* Debug */,
+				C1EA08B62076760500090F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
