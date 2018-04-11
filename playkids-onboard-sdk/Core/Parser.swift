@@ -9,6 +9,7 @@
 import Foundation
 
 internal class Parser {
+
     open func parse(Data: Any, ContentType: String) {
         if (ContentType == "Main"){
             if let dictionary = Data as? [String: Any] {
