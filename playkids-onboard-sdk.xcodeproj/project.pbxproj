@@ -23,6 +23,10 @@
 		BAEC8C723EAF22641C2202B4 /* Pods_playkids_onboard_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD384CB88C237A1503DAA69 /* Pods_playkids_onboard_sdk.framework */; };
 		C11A0A3A2077B14300A64F13 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A0A392077B14300A64F13 /* Parser.swift */; };
 		C11A0A3D2077F8E100A64F13 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A0A3C2077F8E100A64F13 /* Segment.swift */; };
+		C1539E07207D22C700DEEFC7 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1539E06207D22C700DEEFC7 /* Asset.swift */; };
+		C1539E0B207D376D00DEEFC7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1539E0A207D376D00DEEFC7 /* Video.swift */; };
+		C1539E0D207D3D1200DEEFC7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1539E0C207D3D1200DEEFC7 /* Game.swift */; };
+		C1539E0F207D3D1E00DEEFC7 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1539E0E207D3D1E00DEEFC7 /* Books.swift */; };
 		C173A1792076B96900098DDB /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173A1782076B96900098DDB /* SDK.swift */; };
 		C19FDAFC207BBB6100975C22 /* PlaylistGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FDAFB207BBB6100975C22 /* PlaylistGroup.swift */; };
 		C19FDB00207BCB1B00975C22 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FDAFF207BCB1B00975C22 /* Playlist.swift */; };
@@ -48,6 +52,10 @@
 		B27E747C852530C1C377D662 /* Pods-playkids-onboard-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playkids-onboard-sdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-playkids-onboard-sdk/Pods-playkids-onboard-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		C11A0A392077B14300A64F13 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		C11A0A3C2077F8E100A64F13 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		C1539E06207D22C700DEEFC7 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		C1539E0A207D376D00DEEFC7 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		C1539E0C207D3D1200DEEFC7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C1539E0E207D3D1E00DEEFC7 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		C173A1782076B96900098DDB /* SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK.swift; sourceTree = "<group>"; };
 		C19FDAFB207BBB6100975C22 /* PlaylistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistGroup.swift; sourceTree = "<group>"; };
 		C19FDAFF207BCB1B00975C22 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
@@ -107,6 +115,10 @@
 				C11A0A3C2077F8E100A64F13 /* Segment.swift */,
 				C19FDAFB207BBB6100975C22 /* PlaylistGroup.swift */,
 				C19FDAFF207BCB1B00975C22 /* Playlist.swift */,
+				C1539E06207D22C700DEEFC7 /* Asset.swift */,
+				C1539E0A207D376D00DEEFC7 /* Video.swift */,
+				C1539E0C207D3D1200DEEFC7 /* Game.swift */,
+				C1539E0E207D3D1E00DEEFC7 /* Books.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -327,9 +339,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19FDAFC207BBB6100975C22 /* PlaylistGroup.swift in Sources */,
+				C1539E0D207D3D1200DEEFC7 /* Game.swift in Sources */,
+				C1539E07207D22C700DEEFC7 /* Asset.swift in Sources */,
 				C173A1792076B96900098DDB /* SDK.swift in Sources */,
+				C1539E0F207D3D1E00DEEFC7 /* Books.swift in Sources */,
 				C1EA08B2207671CB00090F82 /* Requests.swift in Sources */,
 				C11A0A3A2077B14300A64F13 /* Parser.swift in Sources */,
+				C1539E0B207D376D00DEEFC7 /* Video.swift in Sources */,
 				C11A0A3D2077F8E100A64F13 /* Segment.swift in Sources */,
 				C19FDB00207BCB1B00975C22 /* Playlist.swift in Sources */,
 			);
