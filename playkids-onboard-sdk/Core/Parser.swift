@@ -19,8 +19,8 @@ internal class Parser {
                     var segArray = [Segment]()
                     segments.forEach { segment in
                         let seg = Segment(id: segment["id"] as! String,
-                                          type: segment["name"] as! String,
-                                          name: segment["type"] as! String)
+                                          type: segment["type"] as! String,
+                                          name: segment["name"] as! String)
 //                        print ("Segment ID: \(seg.id)")
 //                        print ("Segment Type: \(seg.type)")
 //                        print ("Segment Name: \(seg.name)")

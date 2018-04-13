@@ -27,6 +27,11 @@
 		C1539E0B207D376D00DEEFC7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1539E0A207D376D00DEEFC7 /* Video.swift */; };
 		C1539E0D207D3D1200DEEFC7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1539E0C207D3D1200DEEFC7 /* Game.swift */; };
 		C1539E0F207D3D1E00DEEFC7 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1539E0E207D3D1E00DEEFC7 /* Books.swift */; };
+		C161AC50207F91090061B81F /* DBMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161AC4F207F91090061B81F /* DBMain.swift */; };
+		C161AC54207FA6CD0061B81F /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161AC53207FA6CD0061B81F /* DBModel.swift */; };
+		C161AC57207FA88E0061B81F /* DBSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161AC56207FA88E0061B81F /* DBSegment.swift */; };
+		C161AC59207FA89B0061B81F /* DBPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161AC58207FA89B0061B81F /* DBPlaylist.swift */; };
+		C161AC5B207FA8BC0061B81F /* DBPlaylistGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161AC5A207FA8BC0061B81F /* DBPlaylistGroup.swift */; };
 		C173A1792076B96900098DDB /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173A1782076B96900098DDB /* SDK.swift */; };
 		C19FDAFC207BBB6100975C22 /* PlaylistGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FDAFB207BBB6100975C22 /* PlaylistGroup.swift */; };
 		C19FDB00207BCB1B00975C22 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FDAFF207BCB1B00975C22 /* Playlist.swift */; };
@@ -56,6 +61,12 @@
 		C1539E0A207D376D00DEEFC7 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		C1539E0C207D3D1200DEEFC7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C1539E0E207D3D1E00DEEFC7 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		C161AC4F207F91090061B81F /* DBMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMain.swift; sourceTree = "<group>"; };
+		C161AC51207F96BE0061B81F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C161AC53207FA6CD0061B81F /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
+		C161AC56207FA88E0061B81F /* DBSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSegment.swift; sourceTree = "<group>"; };
+		C161AC58207FA89B0061B81F /* DBPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPlaylist.swift; sourceTree = "<group>"; };
+		C161AC5A207FA8BC0061B81F /* DBPlaylistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPlaylistGroup.swift; sourceTree = "<group>"; };
 		C173A1782076B96900098DDB /* SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK.swift; sourceTree = "<group>"; };
 		C19FDAFB207BBB6100975C22 /* PlaylistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistGroup.swift; sourceTree = "<group>"; };
 		C19FDAFF207BCB1B00975C22 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
@@ -103,6 +114,7 @@
 		4C6AC5D6BDD7F2E2C451F27F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C161AC51207F96BE0061B81F /* libsqlite3.tbd */,
 				C1A5318620751926006EF6F0 /* Alamofire.framework */,
 				9CD384CB88C237A1503DAA69 /* Pods_playkids_onboard_sdk.framework */,
 			);
@@ -121,6 +133,26 @@
 				C1539E0E207D3D1E00DEEFC7 /* Books.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		C161AC4E207F90AA0061B81F /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				C161AC4F207F91090061B81F /* DBMain.swift */,
+				C161AC53207FA6CD0061B81F /* DBModel.swift */,
+				C161AC55207FA8270061B81F /* Tables */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		C161AC55207FA8270061B81F /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				C161AC56207FA88E0061B81F /* DBSegment.swift */,
+				C161AC5A207FA8BC0061B81F /* DBPlaylistGroup.swift */,
+				C161AC58207FA89B0061B81F /* DBPlaylist.swift */,
+			);
+			path = Tables;
 			sourceTree = "<group>";
 		};
 		C1A5316120750FC1006EF6F0 = {
@@ -149,6 +181,7 @@
 				C1A5316E20750FC2006EF6F0 /* playkids_onboard_sdk.h */,
 				C1A5316F20750FC2006EF6F0 /* Info.plist */,
 				C1A531852075108D006EF6F0 /* Core */,
+				C161AC4E207F90AA0061B81F /* DB */,
 				C11A0A3B2077EC2F00A64F13 /* Objects */,
 			);
 			path = "playkids-onboard-sdk";
@@ -344,10 +377,15 @@
 				C173A1792076B96900098DDB /* SDK.swift in Sources */,
 				C1539E0F207D3D1E00DEEFC7 /* Books.swift in Sources */,
 				C1EA08B2207671CB00090F82 /* Requests.swift in Sources */,
+				C161AC50207F91090061B81F /* DBMain.swift in Sources */,
+				C161AC59207FA89B0061B81F /* DBPlaylist.swift in Sources */,
+				C161AC57207FA88E0061B81F /* DBSegment.swift in Sources */,
 				C11A0A3A2077B14300A64F13 /* Parser.swift in Sources */,
 				C1539E0B207D376D00DEEFC7 /* Video.swift in Sources */,
 				C11A0A3D2077F8E100A64F13 /* Segment.swift in Sources */,
 				C19FDB00207BCB1B00975C22 /* Playlist.swift in Sources */,
+				C161AC5B207FA8BC0061B81F /* DBPlaylistGroup.swift in Sources */,
+				C161AC54207FA6CD0061B81F /* DBModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

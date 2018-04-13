@@ -14,6 +14,8 @@ public final class SDK {
     static var segArray = [Segment]()
     static var mutablePL = Playlist(id: "", def: "")
     static var groupsArray = [PlaylistGroup]()
+    static var numberOfPlaylists = 0
+    static var numberOfUpdatedPlaylists = 0
     static let r = Requests()
     
     public static func startSDK() {
@@ -56,6 +58,7 @@ public final class SDK {
             groupsArray = answer as! [PlaylistGroup]
             
             groupsArray.forEach { group in
+                numberOfPlaylists += group.playlists.count
                 group.playlists.forEach { pl in
                     let def = pl.def
                     let defLink = "https://s3.amazonaws.com/dev.bojack.pkds.it/pk4/r4v1/br/\(def)"
@@ -89,6 +92,15 @@ public final class SDK {
         
         mutablePL.update(nameSent: name, assetsSent: assets)
         
-        print("\nPlaylist ID:\(mutablePL.id)\nPlaylist Name:\(mutablePL.name)\nPlaylist def:\(mutablePL.def)\nPlaylist assets:\n\(mutablePL.assets)")
+        numberOfUpdatedPlaylists += 1
+        if numberOfUpdatedPlaylists == numberOfPlaylists{
+            startDB()
+        }
+    }
+    
+    public static func startDB(){
+        let Database = DBMain()
+        
+        Database.startDB(segArray: segArray, pgArray: groupsArray)
     }
 }
