@@ -14,7 +14,7 @@ public final class SDK {
     static var segArray = [Segment]()
     static var mutablePL = Playlist(id: "", def: "")
     static var groupsArray = [PlaylistGroup]()
-    static let s = Requests()
+    static let r = Requests()
     
     public static func startSDK() {
 
@@ -23,7 +23,7 @@ public final class SDK {
         let requestContentURL = "https://s3.amazonaws.com/dev.bojack.pkds.it/pk4/r4v1/br/content.json"
         
         let CTmain: String = "Main"
-        s.request(requestURL: requestMainURL, contentType: CTmain) { (completion : Any) in
+        r.request(requestURL: requestMainURL, contentType: CTmain) { (completion : Any) in
             let answerMain = completion
             
             segArray = parse(Data: answerMain, ContentType: CTmain) as! [Segment]
@@ -31,7 +31,7 @@ public final class SDK {
         
         let CTContent: String = "Content"
         
-        s.request(requestURL: requestContentURL, contentType: CTContent) { (completion : Any) in
+        r.request(requestURL: requestContentURL, contentType: CTContent) { (completion : Any) in
             let answerContent = completion
             
             groupsArray = parse(Data: answerContent, ContentType: CTContent) as! [PlaylistGroup]
@@ -76,7 +76,7 @@ public final class SDK {
     public static func requestAndParseVideo(requestURL: String, ContentType: String){ //} -> [Any?] {
         var newInfo = [Any?]()
         
-        s.request(requestURL: requestURL, contentType: ContentType){ (completion: Any) in
+        r.request(requestURL: requestURL, contentType: ContentType){ (completion: Any) in
             let answerVideo = completion
             newInfo = parse(Data: answerVideo, ContentType: ContentType)
             updatePlaylistInfo(newInfo: newInfo)

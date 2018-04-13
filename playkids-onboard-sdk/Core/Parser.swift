@@ -10,7 +10,7 @@ import Foundation
 
 internal class Parser {
     open func parse(Data: Any, ContentType: String) -> [Any?] {
-        if (ContentType == "Main"){
+        if (ContentType == "Main") {
             if let dictionary = Data as? [String: Any] {
                 if let segments = dictionary["segments"] as? [[String: Any]]{
                     print ("Main Segment Parse Succesfull")
@@ -31,7 +31,7 @@ internal class Parser {
             }
         } else if (ContentType == "Content") {
             if let dictionary = Data as? [String: Any] {
-                if let groups = dictionary["groups"] as? [[String: Any]]{
+                if let groups = dictionary["groups"] as? [[String: Any]] {
                     print("Groups Parsing Succesfull")
 //                    print(groups)
                     
@@ -116,7 +116,6 @@ internal class Parser {
                                 name = data["name"] as! String
                                 img = data["img"] as! String
                             }
-                            
                             
                             let newGame = game()
                             newGame.type = type
