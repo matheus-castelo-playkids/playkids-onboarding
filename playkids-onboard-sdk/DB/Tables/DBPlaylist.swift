@@ -22,9 +22,6 @@ class DBPlaylist: DBModel{
         
         var stmt: OpaquePointer?
         
-//        let queryString = "INSERT INTO Playlist (id, name, def) VALUES (?,?,?)"
-//        sqlite3_prepare(db, queryString, -1, &stmt, nil) == SQLITE_OK ? print("Playlist Table prepared") : print ("Error preparing Playlist Table")
-        
         playlistArray.forEach{ pl in
             let id = pl.id as NSString
             let name = pl.name as NSString
